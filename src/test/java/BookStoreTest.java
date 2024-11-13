@@ -41,4 +41,9 @@ class BookStoreTest {
         assertNotNull(found, "The book should be found.");
         assertEquals(book, found, "The found book should be equivalent to the one that was added");
     }
+
+    @Test
+    void aFailingTest() {
+        fail();
+    }
 }
